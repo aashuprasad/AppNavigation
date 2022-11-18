@@ -23,12 +23,8 @@ class TitleFragment : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        if (inflater != null) {
-            if (menu != null) {
-                super.onCreateOptionsMenu(menu, inflater)
-            }
-        }
-        inflater?.inflate(R.menu.overflow_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.overflow_menu, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
